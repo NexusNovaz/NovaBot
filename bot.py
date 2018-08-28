@@ -92,7 +92,6 @@ async def openCase(ctx, case=""):
 			drop.add_field(name = "**Case:**", value = weapon["case"], inline = True)
 			# drop.add_field(name = "**Price**", value = get_price(2, weapon["weapon"], weapon["skin"], weapon["condition"])["lowest_price"] + " | " + get_price(3, weapon["weapon"], weapon["skin"], weapon["condition"])["lowest_price"])
 			await ctx.send(embed = drop)
-			await bot.delete_message(ctx.message)
 
 # END COMMANDS
 
