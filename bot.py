@@ -4,7 +4,7 @@ import json
 import random
 import os
 from discord.ext import commands
-from cogs import inventory
+import inventory
 from open_case import open_case
 
 logger = logging.getLogger('discord')
