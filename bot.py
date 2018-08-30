@@ -31,7 +31,7 @@ async def on_ready():
 
 # ON MEMBER JOIN
 @bot.listen()
-async def on_member_join(member):
+async def on_member_join(ctx, member):
     await member.edit(nick="LVL 1 | "+ member.name)
     await member.add_roles(discord.utils.get(ctx.guild.roles, name="LVL 1"))
 # END ON MEMBER JOIN
